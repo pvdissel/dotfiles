@@ -1,11 +1,5 @@
 # freshshell.com
 #
-# Examples:
-#
-#   fresh twe4ked/dotfiles shell/functions.sh
-#   fresh jasoncodes/dotfiles aliases/rails.sh
-#   fresh jasoncodes/dotfiles config/tmux.conf --file
-#
 # See http://freshshell.com/readme for documentation.
 
 fresh freshshell/fresh bin/fresh --bin
@@ -14,3 +8,10 @@ fresh freshshell/fresh bin/fresh --bin
 fresh-options --file
     fresh config/\*
 fresh-options
+
+# aliases
+fresh shell/aliases/\*
+
+# source ~/.fresh/build.sh when loading bash
+fresh freshshell/fresh contrib/source-build.sh --file=~/.bash_profile
+fresh freshshell/fresh contrib/source-build.sh --file=~/.bashrc

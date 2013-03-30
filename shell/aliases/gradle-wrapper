@@ -1,0 +1,15 @@
+# When exists and executable in current directory
+# Use the gradlew (wrapper) as gradle command
+# Otherwise fallback to gradle
+
+alias gradle-bin="command gradle"
+
+function wrapGradle() {
+    if [ -x gradlew ]; then
+        ./gradlew
+    else
+        gradle-bin
+    fi
+}
+alias gradle=wrapGradle
+alias gr=gradle

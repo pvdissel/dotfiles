@@ -1,0 +1,14 @@
+[color]
+	ui = auto
+[alias]
+	co = checkout
+	st = status
+        br = branch
+        ci = commit
+        di = diff
+        sta = stash
+[merge]
+        tool = mymeld
+        conflictstyle = diff3
+[mergetool "mymeld"]
+        cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE

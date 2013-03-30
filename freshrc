@@ -9,4 +9,8 @@
 # See http://freshshell.com/readme for documentation.
 
 fresh freshshell/fresh bin/fresh --bin
-fresh freshshell/fresh contrib/completion/fresh-completion.bash
+
+# Config
+fresh-options --file
+    fresh config/\*
+fresh-options

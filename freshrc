@@ -4,14 +4,21 @@
 
 fresh freshshell/fresh bin/fresh --bin
 
-# Config
+# source ~/.fresh/build.sh when loading bash
+fresh freshshell/fresh contrib/source-build.sh --file=~/.bash_profile
+fresh freshshell/fresh contrib/source-build.sh --file=~/.bashrc
+
+# link configs (eg. ~/.gitconfig)
+# (appends files with the samen name together)
 fresh-options --file
     fresh config/\*
 fresh-options
 
-# aliases
+# shell aliases
 fresh shell/aliases/\*
 
-# source ~/.fresh/build.sh when loading bash
-fresh freshshell/fresh contrib/source-build.sh --file=~/.bash_profile
-fresh freshshell/fresh contrib/source-build.sh --file=~/.bashrc
+# shell configs
+fresh shell/configs/\*
+
+# shell exports
+fresh shell/exports/\*

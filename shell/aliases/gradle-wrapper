@@ -6,9 +6,9 @@ alias gradle-bin="command gradle"
 
 function wrapGradle() {
     if [ -x gradlew ]; then
-        ./gradlew
+        ./gradlew $*
     else
-        gradle-bin
+        gradle-bin $*
     fi
 }
 alias gradle=wrapGradle

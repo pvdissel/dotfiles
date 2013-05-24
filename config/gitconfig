@@ -9,6 +9,7 @@
         sta = stash
         upsvn = svn rebase
         dci = svn dcommit
+        hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 [merge]
         tool = mymeld
         conflictstyle = diff3

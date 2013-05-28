@@ -1,0 +1,12 @@
+## Use smooth scrolling as the default.
+set smooth
+
+## Enable soft line wrapping (AKA full line display)
+set softwrap
+
+## Enable ~/.nano_history for saving and reading search/replace strings.
+set historylog
+
+## Detect word boundaries more accurately by treating punctuation
+## characters as parts of words.
+set wordbounds

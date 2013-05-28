@@ -27,3 +27,6 @@ fresh shell/configs/\*
 
 # shell exports
 fresh shell/exports/\*
+
+# link the .vim directory
+fresh vim --file=~/.vim/

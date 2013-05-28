@@ -1,0 +1,6 @@
+" Load pathogen vim plugin for easy plugin managing support
+execute pathogen#infect()
+
+syntax on
+
+filetype plugin indent on

@@ -32,3 +32,5 @@ fresh shell/exports/\*
 for REPO in tpope/vim-{pathogen,fugitive,sensible,surround,markdown}; do
     fresh $REPO . --file=~/.vim/bundle/$(basename $REPO)/
 done
+# Vim Solarized colorscheme
+fresh altercation/vim-colors-solarized . --file=~/.vim/bundle/vim-colors-solarized/

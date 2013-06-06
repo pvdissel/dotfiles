@@ -1,5 +1,6 @@
 " Load pathogen vim plugin for easy plugin managing support
 runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 
 syntax on
 if has('gui_running')

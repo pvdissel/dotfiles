@@ -1,11 +1,12 @@
 " Load pathogen vim plugin for easy plugin managing support
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 syntax on
 if has('gui_running')
-	set background=light
+    set background=light
 else
-	set background=dark
+    set background=dark
 endif
 colorscheme solarized
 

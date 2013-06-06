@@ -28,5 +28,7 @@ fresh shell/configs/\*
 # shell exports
 fresh shell/exports/\*
 
-# link the .vim directory
-fresh vim --file=~/.vim/
+# Add tpope vim plugins
+for REPO in tpope/vim-{pathogen,fugitive,sensible,surround,markdown}; do
+    fresh $REPO . --file=~/.vim/bundle/$(basename $REPO)/
+done

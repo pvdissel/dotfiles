@@ -1,17 +1,19 @@
 [color]
-	ui = auto
+    ui = auto
 [alias]
-	co = checkout
-	st = status
-        br = branch
-        ci = commit
-        di = diff
-        sta = stash
-        upsvn = svn rebase
-        dci = svn dcommit
-        hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    co = checkout
+    st = status
+    br = branch
+    ci = commit
+    di = diff
+    sta = stash
+    upsvn = svn rebase
+    dci = svn dcommit
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+[push]
+    default = simple
 [merge]
-        tool = mymeld
-        conflictstyle = diff3
+    tool = mymeld
+    conflictstyle = diff3
 [mergetool "mymeld"]
-        cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
+    cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE

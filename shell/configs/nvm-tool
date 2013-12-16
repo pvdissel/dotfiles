@@ -1,0 +1,7 @@
+if [ -r "$HOME/.nvm/nvm.sh" ]; then
+    source "$HOME/.nvm/nvm.sh"
+
+    if [ -r "$NVM_DIR/bash_completion" ]; then
+        source "$NVM_DIR/bash_completion"
+    fi
+fi

@@ -27,3 +27,10 @@ fresh shell/configs/\*
 
 # shell exports
 fresh shell/exports/\*
+
+# Add tpope vim plugins
+for REPO in tpope/vim-{pathogen,fugitive,sensible,surround,markdown}; do
+    fresh $REPO . --file=~/.vim/bundle/$(basename $REPO)/
+done
+# Vim Solarized colorscheme
+fresh altercation/vim-colors-solarized . --file=~/.vim/bundle/vim-colors-solarized/

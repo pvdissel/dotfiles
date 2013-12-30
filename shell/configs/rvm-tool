@@ -1,0 +1,4 @@
+if [ -d "$HOME/.rvm/bin" ]; then
+    RVM_HOME="$HOME/.rvm/bin"
+    export PATH="$PATH:$RVM_HOME"
+fi

@@ -5,7 +5,3 @@ if [ -x /usr/bin/dircolors ]; then
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 fi
-
-if isMac(); then
-    export CLICOLOR=1
-fi

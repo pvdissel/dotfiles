@@ -1,0 +1,3 @@
+if isMac() then
+    export CLICOLOR=1
+fi

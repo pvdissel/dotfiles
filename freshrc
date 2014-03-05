@@ -19,6 +19,9 @@ fresh-options --file
     fresh config/\*
 fresh-options
 
+# shell functions
+fresh shell/functions/\*
+
 # shell aliases
 fresh shell/aliases/\*
 

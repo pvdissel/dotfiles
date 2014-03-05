@@ -2,7 +2,7 @@
 set smooth
 
 ## Enable soft line wrapping (AKA full line display)
-set softwrap
+#set softwrap
 
 ## Enable ~/.nano_history for saving and reading search/replace strings.
 set historylog

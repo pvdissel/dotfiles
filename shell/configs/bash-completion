@@ -3,7 +3,8 @@ if isLinux then
     if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
         . /etc/bash_completion
     fi
-elif isMac then
+fi
+if isMac then
     if [ -f $(brew --prefix)/etc/bash_completion ]; then
         . $(brew --prefix)/etc/bash_completion
     fi

@@ -10,6 +10,7 @@
     upsvn = svn rebase
     dci = svn dcommit
     hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
 [push]
     default = simple
 [merge]

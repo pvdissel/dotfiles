@@ -38,3 +38,5 @@ done
 # Vim Solarized colorscheme
 fresh altercation/vim-colors-solarized . --file=~/.vim/bundle/vim-colors-solarized/
 fresh cypok/vim-sml . --file=~/.vim/bundle/vim-sml/
+
+fresh dougborg/gdub bin/gw --bin

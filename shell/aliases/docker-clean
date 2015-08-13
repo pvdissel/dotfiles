@@ -11,4 +11,4 @@ alias docker-CleanImages='printf "\n>>> Deleting untagged images\n\n" && docker 
 alias docker-clean='docker-CleanContainers || true && docker-CleanImages'
 
 # Clean it all
-alias docker-cleanup='docker-clean || true && docker rmi -f $(docker images -a -q)'
+alias docker-cleanup='sudo stop docker && sudo rm -rf /var/lib/docker && sudo start docker'

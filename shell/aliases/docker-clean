@@ -1,0 +1,14 @@
+# Kill all running containers.
+alias docker-KillAll='docker kill $(docker ps -q)'
+
+# Delete all stopped containers.
+alias docker-CleanContainers='printf "\n>>> Deleting stopped containers\n\n" && docker rm $(docker ps -a -q)'
+
+# Delete all untagged images.
+alias docker-CleanImages='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(docker images -q -f dangling=true)'
+
+# Delete all stopped containers and untagged images.
+alias docker-clean='docker-CleanContainers || true && docker-CleanImages'
+
+# Clean it all
+alias docker-cleanup='docker-clean || && docker rmi $(docker images -q)'

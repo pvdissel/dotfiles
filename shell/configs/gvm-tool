@@ -1,3 +1,8 @@
 if [ -r "$HOME/.gvm/bin/gvm-init.sh" ]; then
     source "$HOME/.gvm/bin/gvm-init.sh"
 fi
+
+export SDKMAN_DIR="$HOME/.sdkman"
+if [ -r "$SDKMAN_DIR/bin/sdkman-init.sh" ]; then
+    source "$SDKMAN_DIR/bin/sdkman-init.sh"
+fi

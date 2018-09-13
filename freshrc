@@ -40,3 +40,4 @@ fresh altercation/vim-colors-solarized . --file=~/.vim/bundle/vim-colors-solariz
 fresh cypok/vim-sml . --file=~/.vim/bundle/vim-sml/
 
 fresh dougborg/gdub bin/gw --bin
+fresh dansomething/mdub bin/mw --bin
